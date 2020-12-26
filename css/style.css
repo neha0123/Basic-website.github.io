@@ -1,0 +1,218 @@
+/*before pseudo selector,position,rem,px yeh vala vedio vedio see*/
+/* CSS resets */
+*{
+    margin:0;
+    padding:0;
+}
+/* navbar decoration short cut for cmnt line ctrol k then ctrl c */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+  display: flex;
+ align-items: center;
+ position: relative;
+  
+}
+#logo{
+    margin: 19px 23px;
+}
+#logo img{
+    height: 78px;
+    margin: 4px 8px;
+    border-radius: 50%;
+   
+} 
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+color: white;
+list-style: none;
+font-size: 18px;
+font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar:before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+   opacity: .80;
+   top: 0px;
+    left: 0px;
+
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px; 
+    border-radius: 20px;
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    }
+#navbar ul li a:hover{
+     color: red;
+    background-color:white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+
+    content: "";
+    background:url(../img/1.jpg.jpg);
+    position: absolute;
+    height: 537px;
+    width: 100%;
+    z-index: -1;
+    opacity: .91;
+    top: 0px;
+    left: 0px;
+
+ }
+ /* Servies section */
+ #services{
+    margin:100px;
+    display: flex;
+ }
+ .services-container::before{
+    font-family: 'Baloo Bhaina 2', cursive;  
+    content: "";
+    position: absolute;
+    background:url(../img/2.jpg.jpg) no-repeat center center/cover ;
+    height: 445px;
+     width: 100%;
+     z-index: -1;
+     opacity: .89;
+}
+ #services .box{
+     border: 2px solid brown;
+     padding: 26px;
+     margin: -89px 10px;
+     border-radius: 39px;
+     background-color: wheat;
+     font-family: 'Baloo Bhaina 2', cursive;
+ }
+ #services .box img{
+    border: 2px solid brown;
+    height: 109px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;   
+}
+#
+
+     
+
+
+ /* utility classses */
+ 
+ 
+ .h-secondary{
+    font-size: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 28px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 12px;
+    text-align: center;
+    color:black;
+}
+#home h1{
+    color: tomato;
+    text-align: center; 
+    font-family: 'Baloo Bhaina 2', cursive;   
+    
+}
+#home p{
+    color:whitesmoke;
+     font-family: 'Roboto Slab', serif;;
+    text-align: center;
+    font-size: 15px;
+}
+.btn{
+    padding: 4px 10px;
+    border: 2px solid saddlebrown;
+    background-color:bisque;
+    border-radius: 5px;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+/* clients section */
+
+#client-section{
+    height: 400px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url(../img/2.jpg.jpg);
+    height: 112%;
+     width: 100%;
+     z-index: -1;
+     opacity: .91;
+ }
+.client-item{
+    padding: 15px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 140px;
+    border-radius: 50%;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    font-family: 'Baloo Bhaina 2', cursive;  
+    content: "";
+    position: absolute;
+    background:url(../img/contact\ 6.jpg) no-repeat center center/cover ;
+    height: 430px;
+     width: 100%;
+     z-index: -1;
+     opacity: 1;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: .3rem;
+    border-radius: 8px;
+    font-size: 1em;
+
+}
+#contact-box label{
+    font-size: 1em;
+    font-family: 'Baloo Bhaina 2', cursive;  
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 35px;
+    padding: 20px 20px;
+    text-align: center;
+}
